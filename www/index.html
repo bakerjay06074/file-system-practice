@@ -1,19 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>PhoneGap</title>
+<title>Tutorialspoint</title>
     <!-- The next line references the cordova library that provides
 	access to native device hardware, e.g., GPS -->
 	<script type="text/javascript" src="cordova.js"></script>
     
-   
-<!-- <script type="text/javascript" charset="utf-8" src="phonegap.js"> -->
 <script type="text/javascript" charset="utf-8" src="mycode.js"></script>
 </head>
 <body onload="init();">
-    <h1>Hello World</h1>
+    <h1>Tutuorialspoint</h1>
     <form>
-        <input type="button" value="Click me" onclick="msg()" />
+        <!-- <input type="button" value="Click me" onclick="msg()" /> -->
+	<button id = "createFile">CREATE FILE</button>
+	<button id = "writeFile">WRITE FILE</button>
+	<button id = "readFile">READ FILE</button>
+	<button id = "removeFile">DELETE FILE</button>
+
+	<textarea id = "textarea"></textarea>
     </form>
 </body>
 </html>
