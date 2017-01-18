@@ -17,7 +17,7 @@ function createFile() {
    var size = 5*1024*1024;
 
    alert('starting to execute createFile');
-   window.requestFileSystem(type, size, successCallback, errorCallback)
+   window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, successCallback, errorCallback)
 
    function successCallback(fs) {
       alert('File system fs is '+fs.name+"<br/>"+'root entry name is'+fs.root.name);
