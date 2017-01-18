@@ -20,6 +20,7 @@ function createFile() {
    window.requestFileSystem(type, size, successCallback, errorCallback)
 
    function successCallback(fs) {
+      alert('File system fs is '+fs.name+"<br/>"+'root entry name is'+fs.root.name);
       fs.root.getFile('log.txt', {create: true, exclusive: true}, function(fileEntry) {
          alert('File creation successfull!');
       }, errorCallback);
