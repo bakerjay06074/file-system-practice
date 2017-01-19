@@ -118,3 +118,9 @@ function removeFile() {
    }
 	
 }	
+
+function getURL() {
+	window.resolveLocalFileSystemURL(cordova.file.applicationStorageDirectory, function(dirEntry) {
+		console.log('file system open: ' + dirEntry.name);
+		alert('file system open: ' + dirEntry.name);
+	}
