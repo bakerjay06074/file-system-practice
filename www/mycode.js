@@ -11,7 +11,7 @@ function onDeviceReady() {
     document.getElementById("readFile").addEventListener("click", readFile);
     document.getElementById("removeFile").addEventListener("click", removeFile);
     document.getElementById("getURL").addEventListener("click", getURL);
-	
+	alert("Device ready");	
 }
 
 function createFile() {
